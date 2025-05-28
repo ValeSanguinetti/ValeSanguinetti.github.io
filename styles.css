@@ -811,24 +811,24 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
-}
-@media (max-width: 768px) {
+}@media (max-width: 768px) {
+  .skills,
+  .curriculum {
+    padding: 10px 10px !important;
+    margin: 0 !important;
+  }
   .skills .fila,
   .curriculum .fila {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
   .skills .fila .col,
   .curriculum .fila .col {
-    width: 100%;
-    padding: 10px 0;
-  }
-    .curriculum {
-    padding: 20px 10px;
-  }
-  .skills .fila .col {
-    padding: 0 10px;
+    width: 100% !important;
+    padding: 5px 0 !important;
+    min-width: 0 !important;
   }
 }
+
 @media screen and (max-width:700px){
    .sobremi .fila{
     display: block;
