@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--MENU-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href=#>Vale</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="MostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+
+    <!--INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenedor_banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpg" alt="">
+            </div>
+            <h1>Valeria Sanguinetti</h1>
+            <h2>Analista Programador</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <!--SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p>
+                <span>Hola, soy Valeria Sanguinetti,</span> una apasionada Analista Programador con un enfoque en el
+                desarrollo de soluciones eficientes y creativas.
+                Me encanta aprender nuevas tecnologías, enfrentar desafíos complejos y trabajar en equipo para alcanzar
+                objetivos comunes.
+                Tengo experiencia en desarrollo web, bases de datos y frameworks modernos como Flutter y Spring Boot.
+            </p>
+            <p>
+                Soy una persona comprometida, con un alto nivel de adaptabilidad y una gran capacidad para resolver
+                problemas.
+                Me esfuerzo constantemente por mejorar mis habilidades y aplicar mis conocimientos para aportar valor
+                a los proyectos en los que participo.
+                Creo en el poder del trabajo en equipo, la perseverancia y la mejora continua
+                como pilares para lograr el éxito.
+            </p>
+            <p>
+                <span>Objetivo: </span>Continuar creciendo como desarrolladora y contribuir al desarrollo
+                de aplicaciones innovadoras que marquen la diferencia.
+            </p>
+            <p>
+                <span>Nivel de Ingles: </span> Básico y estudiando.
+            </p>
+        </div>
+        <div class="fila">
+            <!--datos personales-->
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Fecha de nacimiento</strong>
+                        20-08-2003
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        +598 98 143 583
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        valeriasanguinetti07@gmail.com
+                    </li>
+                    <li>
+                        <strong>Ciudad</strong>
+                        Paysandu, Uruguay
+                    </li>
+                </ul>
+            </div>
+            <!--infereses-->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Desarrollo Web</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Base de Datos</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Desarrollo de Software</span>
+                    </div>
+                </div>
+            </div>
+            <a href="assets/CV-Valeria-Sanguinetti.pdf" download class="boton-cv">
+    Descargar CV <i class="fa-solid fa-download"></i>
+    <span class="overlay"></span>
+</a>
+        </div>
+    </section>
+    <!--skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--Habilidades Tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Flutter</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL SERVER</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MariaDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Firebase</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Genexus 18</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring Boot</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>.Net Framework</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Profesional skills-->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--curriculum-->
+    <section class="curriculum" id="curriculum">
+            <section class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Analista Programador</h4>
+                            <span class="casa">Instituto CTC Paysandu</span>
+                            <span class="fecha">2022 - 2024</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Analista Junior Genexus 18</h4>
+                            <span class="casa">Instituto CTC Paysandu</span>
+                            <span class="fecha">14/02/2024 - 15/04/2024</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Bachillerato Completo, Humanistica</h4>
+                            <span class="casa">Nuestra Señora del Huerto</span>
+                            <span class="fecha">2019 - 2021</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Ciclo Basico</h4>
+                            <span class="casa">Nuestra Señora del Huerto</span>
+                            <span class="fecha">2016 - 2018</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajos</h3>
+                       <div class="item der">
+    <h4>Desarrollo de página web personal</h4>
+    <span class="casa">Proyecto freelance para profesora de inglés</span>
+    <span class="fecha">25/04/2025 - 16/05/2025</span>
+    <p>Diseño y desarrollo, en equipo de 3 personas, un sistema web personalizado para registrar alumnos, gestionar calificaciones (generales y de escritos) y generar carnés estudiantiles automáticamente. El sistema incluye formularios interactivos, almacenamiento de datos y diseño adaptable (responsive).</p>
+
+    <div class="conectord">
+        <div class="circulod"></div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </section>
+    </section>
+        <!--Portafolio-->
+     <section id="portafolio" class="portafolio">
+            <div class="contenido-seccion">
+                <h2>Proyectos</h2>
+                  <div class="galeria">
+                    <div class="proyecto" onclick="openModal(
+    'Sistema Web para Profesora de Inglés',
+    [
+        'img/proyectos/proyectonotas/prof-1.png',
+        'img/proyectos/proyectonotas/prof-2.png',
+        'img/proyectos/proyectonotas/prof-3.png',
+        'img/proyectos/proyectonotas/prof-4.png'
+    ],
+    'Plataforma para una profesora de inglés, que permite registrar alumnos, sus notas, evaluaciones escritas y generar el carné de notas. El sistema facilita la gestión académica y el seguimiento de los estudiantes.',
+    'HTML, CSS, JavaScript, node.js y express, MySQL'
+)">
+    <img src="img/proyectos/proyectonotas/prof-1.png" alt="Sistema Web para Profesora de Inglés">
+    <div class="overlay">
+        <h3>Sistema Web para Profesora de Inglés</h3>
+        <p>25/04/2025 - 16/05/2025</p>
+        <p>Descubre más sobre el proyecto</p>
+    </div>
+</div>           
+                </div>
+                <div class="galeria">
+                    <div class="proyecto" onclick="openModal('Solución Integral para Planes de Izaje', ['img/proyectos/p1/pTesis1.jpeg', 
+              'img/proyectos/p1/pTesis2.jpeg',
+               'img/proyectos/p1/pTesis3.jpeg','img/proyectos/p1/pTesis4.jpeg'],
+            
+  'La aplicación móvil está diseñada para facilitar '+
+  'la creación y gestión digital de planes de izaje. '+
+  'Permite elaborar planes detallados para el levantamiento y movimiento'+ 
+  'de cargas pesadas, asegurando la seguridad y eficiencia en las '+
+  'operaciones. Los usuarios pueden diseñar planes personalizados,'+
+  ' especificando detalles como el tipo de carga, equipo de izaje, puntos de anclaje '+
+  'y rutas de movimiento. La aplicación ofrece herramientas para simular '+
+  'las maniobras de izaje en un entorno virtual, permitiendo identificar '+
+  'posibles riesgos y optimizar las operaciones antes de su ejecución '+
+  'real. Al ser una aplicación móvil, ofrece la flexibilidad de acceder '+
+  'y modificar planes desde cualquier lugar, mejorando la gestión de '+
+  'proyectos en campo.',
+  'Flutter, Dart, Firebase'
+)">
+                        <img src="img/proyectos/p1/pTesis1.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>App Movil</h3>
+                            <p>2024</p>
+                            <p>Descubre más sobre el proyecto</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" onclick="openModal('Sistema de Control de Carné Deportivo',
+               ['img/proyectos/p2/pClub1.png', 'img/proyectos/p2/pClub2.png',
+               'img/proyectos/p2/pClub3.png','img/proyectos/p2/pClub4.png'], 
+               'Plataforma web diseñada para un club deportivo, permite gestionar y controlar de manera eficiente los vencimientos de los carnés de los jugadores, asegurando el cumplimiento de los requisitos y facilitando la organización interna del club.',
+               'C#, .Net Framework, CSS'
+               )">
+                        <img src="img/proyectos/p2/pClub1.png" alt="">
+                        <div class="overlay">
+                            <h3>Página web</h3>
+                            <p>Descubre más sobre el proyecto</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" onclick="openModal('Sistema de Gestión de Eliminatorias Sudamericanas',
+                        ['img/proyectos/p3/p3-1.png', 'img/proyectos/p3/p3-2.png',
+                         'img/proyectos/p3/p3-3.png','img/proyectos/p3/p3-4.png','img/proyectos/p3/p3-5.png',
+                        'img/proyectos/p3/p3-6.png','img/proyectos/p3/p3-7.png'], 
+                        'Este proyecto fue desarrollado como parte de un trabajo obligatorio/examen universitario, con el objetivo de crear una plataforma integral para la gestión de las Eliminatorias Sudamericanas de fútbol. La solución permite registrar y administrar información clave relacionada con los partidos, brindando una visión estructurada y detallada del torneo.',
+                        'Java, Spring Boot, MariaDB'
+              )">
+                        <img src="img/proyectos/p3/p3-1.png" alt="">
+                        <div class="overlay">
+                            <h3>Eliminatorias Sudamericanas</h3>
+                            <p>Descubre más sobre el proyecto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3 id="modal-title"></h3>
+                <div class="carousel">
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <img id="modal-image" src="" alt="">
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                </div>
+                <h4>Descripción: </h4>
+                <p id="modal-description"></p>
+                <h4>Tecnologias Utilizadas: </h4>
+                <p id="modal-tecnologias"></p>
+            </div>
+        </div>
+
+<!--contacto-->
+      <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+            <div class="col">
+                <form id="formulario-contacto">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="telefono" placeholder="Número de Teléfono" required>
+                    <input type="email" name="email" placeholder="Correo Electrónico" required>
+                    <input type="text" name="tema" placeholder="Tema" required>
+                    <textarea name="mensaje" cols="30" rows="4" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+
+                <!-- Mensaje de confirmación -->
+                <p id="mensaje-confirmacion" style="display:none; color: #ff9fdf; margin-top: 10px;">
+                    ¡Mensaje enviado correctamente!
+                </p>
+                <br></br>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
