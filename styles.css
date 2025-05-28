@@ -299,7 +299,7 @@ text-decoration: none;
 }
 @keyframes html-css{
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 75%;}
 }
 .skills .skill .flutter{
     width: 0%;
@@ -811,6 +811,23 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+}
+@media (max-width: 768px) {
+  .skills .fila,
+  .curriculum .fila {
+    flex-wrap: wrap;
+  }
+  .skills .fila .col,
+  .curriculum .fila .col {
+    width: 100%;
+    padding: 10px 0;
+  }
+    .curriculum {
+    padding: 20px 10px;
+  }
+  .skills .fila .col {
+    padding: 0 10px;
+  }
 }
 @media screen and (max-width:700px){
    .sobremi .fila{
