@@ -661,6 +661,23 @@ transition: 1s;
     color: white;
     cursor: pointer;
   }
+  .demo-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #e26d9f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.demo-link:hover {
+  background-color: #d45c8b;
+}
+
 
 /* Contenedor del carrusel */
 .carousel {

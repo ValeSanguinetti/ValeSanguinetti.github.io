@@ -47,13 +47,26 @@ window.onscroll = function(){
 } 
 let currentImageIndex = 0;
 
-function openModal(title, images, description, tecnologias) {
+function openModal(title, images, description, tecnologias,demo=null) {
     // Set the title
     document.getElementById("modal-title").textContent = title;
 
     // Set the description
     document.getElementById("modal-description").textContent = description;
    document.getElementById("modal-tecnologias").textContent = tecnologias;
+   const demoContainer = document.getElementById("modal-demo");
+
+    // Limpiar contenido previo
+    demoContainer.innerHTML = "";
+
+    // Mostrar demo solo si existe
+    if (demo) {
+        demoContainer.innerHTML = `
+            <a href="${demo}" target="_blank" class="demo-link">
+                Ver demo online
+            </a>
+        `;
+    }
     // Set the first image in the carousel
     let imageContainer = document.getElementById("modal-image");
     imageContainer.src = images[currentImageIndex];
