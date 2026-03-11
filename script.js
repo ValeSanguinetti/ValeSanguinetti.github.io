@@ -47,7 +47,7 @@ window.onscroll = function(){
 } 
 let currentImageIndex = 0;
 
-function openModal(title, images, description, tecnologias,demo=null) {
+function openModal(title, images, description, tecnologias,demo=null,demo2=null) {
     // Set the title
     document.getElementById("modal-title").textContent = title;
 
@@ -55,15 +55,25 @@ function openModal(title, images, description, tecnologias,demo=null) {
     document.getElementById("modal-description").textContent = description;
    document.getElementById("modal-tecnologias").textContent = tecnologias;
    const demoContainer = document.getElementById("modal-demo");
+   const demo2Container = document.getElementById("modal-demo2");
+
 
     // Limpiar contenido previo
     demoContainer.innerHTML = "";
+     demo2Container.innerHTML = "";
 
     // Mostrar demo solo si existe
     if (demo) {
         demoContainer.innerHTML = `
             <a href="${demo}" target="_blank" class="demo-link">
                 Ver demo online
+            </a>
+        `;
+    }
+       if (demo2) {
+        demo2Container.innerHTML = `
+            <a href="${demo2}" target="_blank" class="demo-link">
+                Ver V1 online
             </a>
         `;
     }

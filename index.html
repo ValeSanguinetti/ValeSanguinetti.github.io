@@ -16,7 +16,9 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href=#>Vale</a>
+                <a href="#inicio">
+        <img src="img/logo2.png" alt="Logo Valeria Sanguinetti">
+    </a>
             </div>
             <nav id="nav">
                 <ul>
@@ -350,6 +352,50 @@
      <section id="portafolio" class="portafolio">
             <div class="contenido-seccion">
                 <h2>Proyectos</h2>
+                <div class="galeria">
+             
+      <div class="proyecto" onclick="openModal(
+    'VIVCOSMETICS',
+    [
+        'img/proyectos/vivcosmetics/vivcosmetics-1.png',
+        'img/proyectos/vivcosmetics/vivcosmetics-2.png',
+        'img/proyectos/vivcosmetics/vivcosmetics-3.png',
+        'img/proyectos/vivcosmetics/vivcosmetics-4.png'
+
+    ],
+    'Tienda online desarrollada para una emprendedora que está comenzando su negocio de cosmética. El proyecto incluye una página pública para visualizar productos y un panel administrativo con login para gestionar el catálogo. El backend está desarrollado con Node.js y Express, conectado a una base de datos en Supabase, permitiendo administrar productos de forma dinámica. El frontend fue construido con HTML, CSS y JavaScript, priorizando una experiencia simple y clara para los usuarios.',
+    'HTML, CSS, JavaScript, Node.js, Express, Supabase',
+    'https://vivcosmetics.vercel.app'
+)">
+    <img src="img/proyectos/Vivcosmetics/vivcosmetics-1.png" alt="VIVCOSMETICS tienda online">
+    <div class="overlay">
+        <h3>VIVCOSMETICS</h3>
+        <p>Proyecto full stack 03/2026</p>
+        <p>Descubre más sobre el proyecto</p>
+    </div>
+</div>
+<div class="proyecto" onclick="openModal(
+    'Diario de Lecturas – V2',
+    [
+        'img/proyectos/DiarioLecturas/diario-1.png',
+        'img/proyectos/DiarioLecturas/diario-2.png',
+        'img/proyectos/DiarioLecturas/diario-3.png',
+        'img/proyectos/DiarioLecturas/diario-4.png',
+        'img/proyectos/DiarioLecturas/diario-5.png'
+    ],
+    'Aplicación web full stack para registrar y organizar lecturas. El proyecto comenzó como una primera versión (V1) que almacenaba los datos en LocalStorage y luego evolucionó a esta V2 con arquitectura full stack. Esta versión incorpora autenticación y base de datos con Supabase, backend propio desarrollado con Node.js y Express y mejoras en la lógica de la aplicación. Permite registrar libros, organizarlos por meses y visualizar estadísticas de lectura.',
+    'HTML, CSS, JavaScript, Node.js, Express, Supabase',
+    'https://mi-diario-lecturas-v2.vercel.app',
+    'https://valesanguinetti.github.io/mi-diario-lecturas/'
+)">
+    <img src="img/proyectos/DiarioLecturas/diario-1.png" alt="Diario de Lecturas">
+    <div class="overlay">
+        <h3>Diario de Lecturas – V2</h3>
+        <p>Proyecto Full Stack 02/2026</p>
+        <p>Descubre más sobre el proyecto</p>
+    </div>
+</div>
+     </div>
                   <div class="galeria">
              
                     <div class="proyecto" onclick="openModal(
@@ -482,6 +528,7 @@
                 <p id="modal-tecnologias"></p>
                 <h4>Demo: </h4>
                 <p id="modal-demo"></p>
+                <p id="modal-demo2"></p>
             </div>
         </div>
 
